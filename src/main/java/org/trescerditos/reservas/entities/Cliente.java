@@ -31,7 +31,7 @@ public class Cliente implements IEntidadLogicaGenerica {
     @Column(name = "fecha_creacion")
     private Instant fechaCreacion;
 
-    @ColumnDefault("(1)")
+
     @Column(name = "active")
     private Boolean active;
 

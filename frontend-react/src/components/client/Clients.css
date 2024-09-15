@@ -1,0 +1,141 @@
+/* src/components/Clients.css */
+
+/* Estilos para centrar la tabla */
+.table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 00px); /* Ajusta según la altura de tu navbar */
+    padding: 80px;
+    background-color: #242424; /* Mantener el fondo oscuro */
+    color: #ffffff; /* Color de texto */
+}
+
+/* Estilos para la tarjeta de clientes */
+.clients-card {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Estilos para la tabla de clientes */
+.clients-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1a1a1a; /* Fondo oscuro */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra suave */
+}
+
+/* Estilos para las celdas de la tabla */
+.clients-table th,
+.clients-table td {
+    padding: 15px;
+    border-bottom: 1px solid #444; /* Ajuste para el fondo oscuro */
+    text-align: left;
+}
+
+/* Estilos para la cabecera de la tabla */
+.clients-table th {
+    background-color: #333; /* Fondo oscuro para la cabecera */
+    color: #ffffff; /* Color de texto */
+    font-weight: bold;
+}
+
+/* Estilos para las filas alternas de la tabla */
+.clients-table tr:nth-child(even) {
+    background-color: #2a2a2a; /* Color alterno para las filas */
+}
+
+/* Estilos para las filas al pasar el mouse */
+.clients-table tr:hover {
+    background-color: #3a3a3a; /* Color de resaltado al pasar el mouse */
+}
+
+/* Estilos para los enlaces en la tabla */
+.clients-table a {
+    color: #ffffff; /* Color de texto de los enlaces */
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos para los enlaces al pasar el mouse */
+.clients-table a:hover {
+    background-color: #535bf2; /* Cambio de color al pasar el mouse */
+    color: #ffffff;
+}
+
+/* Estilos para centrar y estilizar el formulario */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    background-color: #1a1a1a; /* Fondo oscuro para el formulario */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para el formulario */
+    color: #ffffff; /* Color de texto blanco */
+}
+
+/* Estilos para el encabezado del formulario */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Estilos para las etiquetas del formulario */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Estilos para los campos de entrada del formulario */
+input[type="date"],
+input[type="time"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #2a2a2a;
+    color: #ffffff;
+}
+
+/* Estilos para el selector de calendario */
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+    color: #ffffff;
+}
+
+/* Estilos para los botones */
+button {
+    background-color: #646cff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos para el botón al pasar el mouse */
+button:hover {
+    background-color: #535bf2;
+}
+
+/* Estilos para el botón deshabilitado */
+button:disabled {
+    background-color: #333;
+    cursor: not-allowed;
+}
